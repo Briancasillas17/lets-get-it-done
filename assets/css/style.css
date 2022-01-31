@@ -1,71 +1,92 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --past-color: #d3d3d3;
+    --present-color: #ff6961;
+    --future-color: #77dd77;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-  }
-  
-  textarea{
+}
+
+textarea{
     background: transparent;
     border: none;
     resize: none;
-    color: #000000;
-    border-left: 1px solid black;
+    color: var(--primary-color);
+    border-left: 1px solid var(--primary-color);
     padding: 10px;
-  }
-  
-  .jumbotron {
+}
+
+.jumbotron {
     text-align: center;
     background-color: transparent;
-    color: black;
+    color: var(--primary-color);
     border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
-  .description{
+    border-bottom: 10px solid var(--primary-color);
+}
+
+.description{
     white-space: pre-wrap;
-  }
-  
-  .time-block{
+}
+
+.time-block{
     text-align: center;
     border-radius: 15px;
-  }
-  
-  .row {
+}
+
+.row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: white;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
+    border-top: 1px solid var(--secondary-color);;
+}
+
+.hour {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-top: 1px dashed var(--primary-color);
+}
+
+.past {
+    background-color: var(--past-color);
+    color: var(--primary-color);
+}
+
+.present {
+    background-color: var(--present-color);
+    color: var(--primary-color);
+}
+
+.future {
+    background-color: var(--future-color);
+    color: var(--primary-color);
+}
+
+.saveBtn {
+    border-left: 1px solid var(--primary-color);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
+    color: var(--secondary-color);
+}
+
+.saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
-  }
+    cursor: pointer;
+}
+
+.fas {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 40%;
+    left: 40%;
+}
+
+.fas:hover {
+    color: slategrey;
+}
